@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Aman Pratap Singh</title>
+    <link>https://blog.amanps.xyz/posts/</link>
+    <description>Recent content in Posts on Aman Pratap Singh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 24 Jun 2023 04:00:00 +0530</lastBuildDate><atom:link href="https://blog.amanps.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reflections at 25</title>
+      <link>https://blog.amanps.xyz/posts/2023-06-24-reflections-at-25/</link>
+      <pubDate>Sat, 24 Jun 2023 04:00:00 +0530</pubDate>
+      
+      <guid>https://blog.amanps.xyz/posts/2023-06-24-reflections-at-25/</guid>
+      <description>It’s June, and the mango season. I have just closed the lid of my work laptop after a typical workday. While pondering what to do with the couple of spare hours before dinner, here I am trying to scribble something again on this long forgotten blog feed.
+I completed 25 years of life this month and as my me-only solitude whatsapp chatgroup is brimming with my cold shower thoughts journal-ish entries, I am attempting this writing to stitch these thoughts in a blog (after a long break of 2.</description>
+    </item>
+    
+    <item>
+      <title>2020 Year log</title>
+      <link>https://blog.amanps.xyz/posts/2021-01-01-2020-year-log/</link>
+      <pubDate>Fri, 01 Jan 2021 04:00:00 +0530</pubDate>
+      
+      <guid>https://blog.amanps.xyz/posts/2021-01-01-2020-year-log/</guid>
+      <description>I still remember the night of 31st December 2019. College was scheduled to reopen from 1st January for Spring Semester. I was flying from New Delhi to Bhubaneswar after the winter break. Spent the beginning of new year in air, reached my college’s hostel at around 1:30 AM. Few of floormates were already there and they had big plans for the night. What happened after that is hazy in the memory, the only thing I remember is I woke in evening of 1st Jan and missed the semester registration.</description>
+    </item>
+    
+    <item>
+      <title>The semester of Hackathons</title>
+      <link>https://blog.amanps.xyz/posts/2019-03-10-the-semester-of-hackathons/</link>
+      <pubDate>Sat, 09 Mar 2019 04:00:00 +0530</pubDate>
+      
+      <guid>https://blog.amanps.xyz/posts/2019-03-10-the-semester-of-hackathons/</guid>
+      <description>Seeing the Hackathon related posts and conversations on Twitter and Reddit, I always had a desire to attend a Hackathon before my college ends. Finally this spring semester I got the chance to attend not just one but two hackathons. In this blog post, I&amp;rsquo;ll share my experience of participating in Inter IIT Tech Meet Coding Hackathon 2018 and winning Smart India Hackathon 2019.
+Inter IIT Tech Meet Coding Hackathon Inter IIT Tech Meet is an annual event where all IITs compete in various technical competitions.</description>
+    </item>
+    
+    <item>
+      <title>GSoC with CERN-HSF (Part-2)</title>
+      <link>https://blog.amanps.xyz/posts/2018-08-21-gsoc-with-cern-hsf-part-2/</link>
+      <pubDate>Wed, 22 Aug 2018 04:00:00 +0530</pubDate>
+      
+      <guid>https://blog.amanps.xyz/posts/2018-08-21-gsoc-with-cern-hsf-part-2/</guid>
+      <description>Hello, I’m Aman, GSoC 2018 student under CERN-HSF. Last month, I wrote about my Project and the work I did in the first month of the GSoC coding period. This post summarises the work I did in the last two months of the GSoC coding period and what I achieved overall in the summer.
+The second Coding Phase In the second coding phase, I mostly worked on designing and implementing the Jobs tab in Jupyter tree view.</description>
+    </item>
+    
+    <item>
+      <title>GSoC with CERN-HSF (Part-1)</title>
+      <link>https://blog.amanps.xyz/posts/2018-06-09-gsoc-with-cern-hsf-part-1/</link>
+      <pubDate>Sat, 09 Jun 2018 04:00:00 +0530</pubDate>
+      
+      <guid>https://blog.amanps.xyz/posts/2018-06-09-gsoc-with-cern-hsf-part-1/</guid>
+      <description>I have been selected in Google Summer of Code 2018 under CERN-HSF umbrella organisation. My project is co-mentored by HEP Software Foundation and Imperial College, London.
+This was the first time I applied for GSoC. It was my dream from the freshman year and I started preparing for it from a long time ago. I started writing code for fun, published it on Github, contributed to multiple open source projects.</description>
+    </item>
+    
+    <item>
+      <title>Chilika Lake : The Best of Odisha</title>
+      <link>https://blog.amanps.xyz/posts/2018-03-31-chilka-lake-the-best-of-odisha/</link>
+      <pubDate>Sat, 31 Mar 2018 04:00:00 +0530</pubDate>
+      
+      <guid>https://blog.amanps.xyz/posts/2018-03-31-chilka-lake-the-best-of-odisha/</guid>
+      <description>So it had been one and a half year since I landed in Odisha, The soul of Incredible India and I hadn’t explored any of Odisha’s great landscapes except a short trip to Udaygiri and Khandagiri, so to consume the wanderlust generated over three semesters, We (I and my 9 other friends) decided to had a detour from our monotonous college life and visit Chilika Lake, Asia’s largest brackish water lagoon.</description>
+    </item>
+    
+    <item>
+      <title>Web Scrapping with Python</title>
+      <link>https://blog.amanps.xyz/posts/2017-12-15-web-scrapping-with-python/</link>
+      <pubDate>Fri, 15 Dec 2017 13:00:00 +0530</pubDate>
+      
+      <guid>https://blog.amanps.xyz/posts/2017-12-15-web-scrapping-with-python/</guid>
+      <description>Internet has superabundant information and knowledge but to extract that knowledge in organised, scalable and systemetic way for data analysis and other research purpose is known as Web Scrapping.
+Web Scrapping automatically extracts the data from a particular website and present it in user desired form. We can scrap many things from the web like Stock updates, Price of any product from Amazon. In this post I&amp;rsquo;ll scrap news updates from my college&amp;rsquo;s website.</description>
+    </item>
+    
+    <item>
+      <title>Setting up Competitive Programming Environment</title>
+      <link>https://blog.amanps.xyz/posts/2017-06-25-setting-up-competitive-programming-environment/</link>
+      <pubDate>Sun, 25 Jun 2017 13:00:00 +0530</pubDate>
+      
+      <guid>https://blog.amanps.xyz/posts/2017-06-25-setting-up-competitive-programming-environment/</guid>
+      <description>1. Chosing an Operating System Almost every beginner use Windows but the OS preferred by veteran developers and programmers is certainly Linux as it provide a better coding experience and plethora of customization opportunities.
+The following article describe why you should consider using Linux:
+7 Superb Reasons Why You Should Use Linux For Programming
+Chosing a Linux Distro The another great thing about Linux is that there are plenty of distros available.</description>
+    </item>
+    
+    <item>
+      <title>Hello World!</title>
+      <link>https://blog.amanps.xyz/posts/2017-06-05-hello-world/</link>
+      <pubDate>Mon, 05 Jun 2017 16:16:24 +0530</pubDate>
+      
+      <guid>https://blog.amanps.xyz/posts/2017-06-05-hello-world/</guid>
+      <description>Bonjour! So after 3 countiguous hours, I&amp;rsquo;m finally done with setting up this blog with Jekyll. At first glance it was perplexing but as I dived deep into documentation of Jekyll everything sorted out.
+What is Jekyll ? Quoting from Jekyll Documentation:
+Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.</description>
+    </item>
+    
+  </channel>
+</rss>

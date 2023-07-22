@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Web Scrapping with Python</title>
+    <meta name="description" content="Sailing through uncharted waters">
+    <meta name="keywords" content='blog, aman, pratap, singh'>
+
+    <meta property="og:url" content="https://blog.amanps.xyz/posts/2017-12-15-web-scrapping-with-python/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Web Scrapping with Python">
+    <meta property="og:description" content="Sailing through uncharted waters">
+    <meta property="og:image" content="https://blog.amanps.xyz/">
+    <meta property="og:image:secure_url" content="https://blog.amanps.xyz/">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Web Scrapping with Python">
+    <meta name="twitter:description" content="Sailing through uncharted waters">
+    <meta property="twitter:domain" content="https://blog.amanps.xyz/posts/2017-12-15-web-scrapping-with-python/">
+    <meta property="twitter:url" content="https://blog.amanps.xyz/posts/2017-12-15-web-scrapping-with-python/">
+    <meta name="twitter:image" content="https://blog.amanps.xyz/">
+
+    
+    <link rel="canonical" href="https://blog.amanps.xyz/posts/2017-12-15-web-scrapping-with-python/" />
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.edd985581bf860dfb4507e5885197f1680160c7fe19f23b31e183126d99dd596.js" integrity="sha256-7dmFWBv4YN&#43;0UH5YhRl/FoAWDH/hnyOzHhgxJtmd1ZY="></script>
+
+    
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://blog.amanps.xyz/">Aman Pratap Singh</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://amanps.xyz"><span data-feather='home'></span>  Home</a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://blog.amanps.xyz/posts/"> Posts </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://amanps.xyz"><span data-feather='home'></span>  Home</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://blog.amanps.xyz/posts/"> Posts </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Web Scrapping with Python</h1>
+        <small role="doc-subtitle"></small>
+        <p class="post-date">
+            December 15, 2017
+        </p>
+
+        <ul class="post-tags">
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <p>Internet has superabundant information and knowledge but to extract that knowledge in organised, scalable and systemetic way for data analysis and other research purpose is known as <a href="https://en.wikipedia.org/wiki/Web_scraping">Web Scrapping</a>.</p>
+<p>Web Scrapping automatically extracts the data from a particular website and present it in user desired form. We can scrap many things from the web like Stock updates, Price of any product from Amazon. In this post I&rsquo;ll scrap news updates from my <a href="http://www.iitbbs.ac.in">college&rsquo;s website</a>.</p>
+<h2 id="getting-started">Getting Started</h2>
+<p>We can use almost any scripting language for web scrapping however the popular options are Javascript and Python. Both Javascript and Python have rich set of scrapping libraries like <a href="https://github.com/cheeriojs/cheerio">CheerioJS</a> for Javascript and <a href="https://scrapy.org">Scrapy</a>, <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">BeautifulSoup</a> for Python.</p>
+<p>I&rsquo;ll use Python and BeautifulSoup for this post because both Python and BeautifulSoup are beginner friendly.</p>
+<ul>
+<li>For Mac and Linux users, Python is preinstalled.</li>
+<li>Windows users can install Python from <a href="https://python.org">official website</a>.</li>
+</ul>
+<p>For installing BeautifulSoup library, simply enter following command in terminal.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install beautifulsoup4
+</span></span></code></pre></div><h2 id="finding-target-from-html">Finding Target from HTML</h2>
+<p>All the news &amp; updates of IIT Bhubaneswar are enlisted on <a href="http://www.iitbbs.ac.in/news.php">this</a> webpage. Visit this Webpage and press <code>Ctr + Shift + I</code> to inspect source code of the webpage. Now click on the the mouse button present on the top-left part of inspector panel and hover over list of news updates. We can see in inspector panel that all news and updates of that webpage are inside an unordered list with class <em>rectlist</em>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">ol</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;rectlist&#34;</span>&gt;&lt;/<span style="color:#f92672">ol</span>&gt;
+</span></span></code></pre></div><p>Thus we have to scrap all list items present in aforementioned unordered list.</p>
+<h2 id="writing-script-for-scrapping">Writing script for scrapping</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># imporing library for fetching HTML content of webpage</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> urllib2
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># For scrapping list items txt and links from raw HTML</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> bs4 <span style="color:#f92672">import</span> BeautifulSoup
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Target URL</span>
+</span></span><span style="display:flex;"><span>url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;http://www.iitbbs.ac.in/news.php&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Fetching HTML content from url and storing it in &#39;page&#39; variable</span>
+</span></span><span style="display:flex;"><span>page <span style="color:#f92672">=</span> urllib2<span style="color:#f92672">.</span>urlopen(url)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Parsing HTML with beautifulsoup and storing it in &#39;soup&#39; variable</span>
+</span></span><span style="display:flex;"><span>soup <span style="color:#f92672">=</span> BeautifulSoup(page, <span style="color:#e6db74">&#39;html.parser&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Finding Unordered list with rectlist class and storing it in newsOl variable</span>
+</span></span><span style="display:flex;"><span>newsOl <span style="color:#f92672">=</span> soup<span style="color:#f92672">.</span>find(<span style="color:#e6db74">&#39;ol&#39;</span>, attrs<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#39;class&#39;</span>: <span style="color:#e6db74">&#39;rectlist&#39;</span>})
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Finding all list items of unordered list and storing them in newsLi variable</span>
+</span></span><span style="display:flex;"><span>newsLi <span style="color:#f92672">=</span> newsOl<span style="color:#f92672">.</span>find_all(<span style="color:#e6db74">&#39;li&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Printing text and href address of all list items</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> link <span style="color:#f92672">in</span> newsLi:
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e"># Storing text of link in news variable</span>
+</span></span><span style="display:flex;"><span>	news <span style="color:#f92672">=</span> link<span style="color:#f92672">.</span>text<span style="color:#f92672">.</span>strip()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e"># Storing href address in link variable.</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e"># Some href are relatively stored so we have to screen them and append absolute path in href address.</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> link<span style="color:#f92672">.</span>find(<span style="color:#e6db74">&#39;a&#39;</span>)<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;href&#39;</span>)[:<span style="color:#ae81ff">4</span>] <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#39;http&#39;</span>:
+</span></span><span style="display:flex;"><span>		link <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;http://www.iitbbs.ac.in/&#39;</span> <span style="color:#f92672">+</span> link<span style="color:#f92672">.</span>find(<span style="color:#e6db74">&#39;a&#39;</span>)<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;href&#39;</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>		link <span style="color:#f92672">=</span> link<span style="color:#f92672">.</span>find(<span style="color:#e6db74">&#39;a&#39;</span>)<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;href&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e"># Printing news and link to terminal/shell.</span>
+</span></span><span style="display:flex;"><span>	print(news <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">+</span> link <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span>)
+</span></span></code></pre></div><p>After running this script we&rsquo;ll get required result in terminal.</p>
+<p>You can learn more about BeautifulSoup library by visiting it&rsquo;s <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">official documentation</a>.</p>
+<p>Other Resources:</p>
+<ul>
+<li><a href="http://www.geeksforgeeks.org/implementing-web-scraping-python-beautiful-soup/">Geeksforgeeks</a></li>
+<li><a href="https://www.analyticsvidhya.com/blog/2015/10/beginner-guide-web-scraping-beautiful-soup-python/">Analytics Vidhya</a></li>
+</ul>
+<p><strong>Update:</strong> I recently came to know another very good resource(<a href="https://likegeeks.com/python-web-scraping">https://likegeeks.com/python-web-scraping</a>) for Web Scrapping. I think you may also like it.</p>
+<p><strong>Warning:</strong> Scrapping data from certain website may violate their Terms and Conditions or Privacy Policy. Please check such things before deploying any scrapper. Most of the websites also have a file named <em>robots.txt</em> on their server which lists all such webpages that shouldn&rsquo;t be crawled so check for such files before scrapping from any site. For e.g. robot.txt file of Google is present on this <a href="https://www.google.co.in/robots.txt">link</a>.</p>
+<hr>
+<p>You can comment below any doubt / criticism or compliment. Also if you like this post please share it among your hacker friends.
+Don’t forget to bookmark my blog and keep visiting frequently. Bonne journee!</p>
+
+        </p>
+        
+    </div>
+
+    <div class="prev-next">
+        
+    </div>
+</div>
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#getting-started">Getting Started</a></li>
+    <li><a href="#finding-target-from-html">Finding Target from HTML</a></li>
+    <li><a href="#writing-script-for-scrapping">Writing script for scrapping</a></li>
+  </ul>
+</nav>
+    </nav>
+</aside>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+    <span>&copy; 2023 Aman Pratap Singh | apsknight</span>
+    
+    <span>
+        Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>
+    </span>
+</footer>
+</body>
+</html>
